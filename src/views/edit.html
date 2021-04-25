@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudante</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+<h1 style="text-align: center;">Editar Estudante {{aluno.name}}</h1>    
+<form action="/edit/{{aluno.id}}" method="post">
+    {# <input type="hidden" name="_method" value="PUT"/> #}
+    <div class="row">
+        <div class="col-md-6">
+            <input type="text" name="name" id="name" placeholder="nome" class="form-control" value="{{ aluno.name }}">
+        </div>
+        <div class="col-md-6">
+            <input type="text" name="idade" id="idade" placeholder="idade" class="form-control"value="{{ aluno.idade }}">
+        </div>
+    </div>
+    <br>
+    <div class="row col-xs-12">
+        <button type="submit" class="btn btn-block btn-success">Enviar</button>
+    </div>
+</form> 
+</body>
+</html>

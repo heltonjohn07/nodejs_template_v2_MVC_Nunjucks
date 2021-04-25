@@ -1,0 +1,29 @@
+{
+  "name": "api_template_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "roda:migrate": "knex migrate:latest",
+    "volta:migrate": "knex migrate:rollback",
+    "roda:seed": "knex seed:run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.95.4",
+    "moment": "^2.29.1",
+    "nunjucks": "^3.2.3",
+    "path": "^0.12.7",
+    "pg": "^8.5.1",
+    "sqlite3": "^5.0.2",
+    "underscore": "^1.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
